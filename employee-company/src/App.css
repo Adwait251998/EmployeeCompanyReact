@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  max-width: 1000px;
+  margin: auto auto;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-logo {
@@ -43,4 +49,47 @@
 .formContainer {
   margin: auto;
   max-width: 500px;
+}
+.table-container {
+  margin: 2rem auto;
+  max-width: 1000px;
+  padding: 1rem;
+}
+
+/* Table aesthetics */
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  font-family: "Segoe UI", sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Header */
+.styled-table thead tr {
+  background-color: #2d6cdf;
+  color: #ffffff;
+  text-align: left;
+}
+
+/* Body rows */
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+  transition: background-color 0.3s ease;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f9f9f9;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Cells */
+.styled-table th,
+.styled-table td {
+  padding: 12px 20px;
 }
